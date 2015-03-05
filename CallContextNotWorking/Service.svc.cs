@@ -1,6 +1,8 @@
 ﻿namespace CallContextNotWorking
 {
-    [EndpointBehaviuor]
+    //[EndpointBehaviuor] - Uncomment if you want to resolve the defect.
+    // This will enable the CallContextResetInspector.cs that will reset
+    // CallContext on every request.
     public class Service : IService
     {
         private const string LookupKey = "Infomation";
